@@ -1,7 +1,8 @@
 install-pkg:
   pkg.installed:
-    - name: keepalived
-    - name: nginx
+    - pkgs:    
+      - keepalived
+      - nginx
 
 nginx-config-file-managed:
   file.managed:
